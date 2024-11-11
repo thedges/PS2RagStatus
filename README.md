@@ -4,6 +4,20 @@ THIS SOFTWARE IS COVERED BY [THIS DISCLAIMER](https://raw.githubusercontent.com/
 Simple LWC to help debug RAG issues
 
 
+# Sample Image
+![alt text](https://github.com/thedges/PS2RagStatus/blob/main/PS2RagStatus.jpg "Sample Photo")
+
+# Errors
+If the component detects any issues with the creation of the core DMO objects (), an error message like the following will be displayed
+![alt text](https://github.com/thedges/PS2RagStatus/blob/main/PS2RagStatus-Error.jpg "Error")
+
+# Configuration Parameters
+
+| Parameter  | Type | Definition |
+| ------------- | ------------- |------------- |
+| Card Title | Text | A name to be displayed at top of component |
+| Icon Name | Text | The SLDS icon name to be displayed at top of component. Refer to [SLDS Icons](https://www.lightningdesignsystem.com/icons/) |
+
 # Installation Instructions
 
 <b>Here are steps to use this component:</b>
