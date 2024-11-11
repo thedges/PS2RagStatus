@@ -22,12 +22,12 @@ If the component detects any issues with the creation of the core DMO objects ()
 
 # Cell Color Coding
 
-Count > 1 - Yellow
-Count = 0 - Red
-Index Count or Chunk Count == 0 - Red
-Index Count < Count - Red
-Chunk count < Count - Red
-Index count != Chunk Count - Red
+* Count > 1 - Yellow
+* Count = 0 - Red
+* Index Count or Chunk Count = 0 - Red
+* Index Count < Count - Red
+* Chunk count < Count - Red
+* Index count != Chunk Count - Red
 
 
 # Installation Instructions
