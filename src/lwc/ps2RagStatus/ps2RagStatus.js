@@ -1,4 +1,4 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, api } from 'lwc';
 import { loadStyle } from 'lightning/platformResourceLoader';
 import { ShowToastEvent } from "lightning/platformShowToastEvent";
 import getDataLibraries from '@salesforce/apex/PS2RagStatus.getDataLibraries';
@@ -28,8 +28,8 @@ const columns = [
 ];
 
 export default class Ps2RagStatus extends LightningElement {
-    title = 'RAG Data Library Status';
-    iconName = 'standard:choice';
+    @api title = 'RAG Data Library Status';
+    @api iconName = 'standard:choice';
     isCssLoaded = false;
 
     dLibOptions = [];

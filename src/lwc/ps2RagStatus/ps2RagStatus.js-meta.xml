@@ -8,4 +8,10 @@
         <target>lightning__AppPage</target>
         <target>lightning__HomePage</target>
     </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage, lightning__AppPage, lightning__HomePage">
+            <property name="title" type="String" default="RAG Data Library Status" label="Card Title" description="The title for the card"></property>
+            <property name="iconName" type="String" default="standard:choice" label="Icon Name" description="The SLDS icon name for card title"></property>
+        </targetConfig>
+    </targetConfigs>
 </LightningComponentBundle>
