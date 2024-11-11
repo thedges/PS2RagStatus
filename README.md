@@ -1,7 +1,7 @@
 # PS2RagStatus
 THIS SOFTWARE IS COVERED BY [THIS DISCLAIMER](https://raw.githubusercontent.com/thedges/Disclaimer/master/disclaimer.txt).
 
-Simple LWC to help debug RAG issues
+Simple LWC to help debug RAG issues. The component will first determine if the core DMO objects (RagFileUDMO__dlm or AiGroundingFileRefCustom__dlm) were created and throw an error if so. If those core objects exist, it will present a list of Data Libraries that you can review the files that exists in the library, count of files, indexes and chunks. Color coding of the cells is provided to help easily find issues.
 
 
 # Sample Images
