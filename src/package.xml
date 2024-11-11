@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>PS2RagStatus</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>RAG_Status</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Status</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>RAG_Status</members>
+        <members>RAG_Status_UtilityBar</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>ps2RagStatus</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>PS2RagStatus</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>PS2RagStatusCSS</members>
+        <name>StaticResource</name>
+    </types>
+    <version>55.0</version>
+</Package>

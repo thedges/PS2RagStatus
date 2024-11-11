@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title={title} icon-name={iconName}>
+        <div slot="actions">
+            <lightning-button-icon icon-name="utility:refresh" alternative-text="Refresh" title="Refresh"
+                onclick={handleRefresh} size="medium"></lightning-button-icon>
+        </div>
+        <lightning-combobox name="datalib" label="Data Library ID" value={dLibSelection}
+            placeholder="Select Data Library" options={dLibOptions} onchange={handleLibChange}
+            variant="label-inline"></lightning-combobox>
+
+        <div if:true={isLoading} style="height: 200px; position:relative">
+            <lightning-spinner variant="base" size="medium"></lightning-spinner>
+        </div>
+        <div if:false={isLoading}>
+            <div style="max-height: 800px;" class="custom-datatable-no-hoverX">
+                <lightning-datatable key-field="name" data={dFiles} columns={columns} column-widths-mode="auto" hide-checkbox-column>
+                </lightning-datatable>
+            </div>
+        </div>
+    </lightning-card>
+</template>
