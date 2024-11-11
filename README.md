@@ -20,6 +20,16 @@ If the component detects any issues with the creation of the core DMO objects ()
 | Card Title | Text | A name to be displayed at top of component |
 | Icon Name | Text | The SLDS icon name to be displayed at top of component. Refer to [SLDS Icons](https://www.lightningdesignsystem.com/icons/) |
 
+# Cell Color Coding
+
+Count > 1 - Yellow
+Count = 0 - Red
+Index Count or Chunk Count == 0 - Red
+Index Count < Count - Red
+Chunk count < Count - Red
+Index count != Chunk Count - Red
+
+
 # Installation Instructions
 
 <b>Here are steps to use this component:</b>
