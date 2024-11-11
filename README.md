@@ -4,8 +4,10 @@ THIS SOFTWARE IS COVERED BY [THIS DISCLAIMER](https://raw.githubusercontent.com/
 Simple LWC to help debug RAG issues
 
 
-# Sample Image
+# Sample Images
 ![alt text](https://github.com/thedges/PS2RagStatus/blob/main/PS2RagStatus.jpg "Sample Photo")
+
+![alt text](https://github.com/thedges/PS2RagStatus/blob/main/PS2RagStatus-2.jpg "Sample Photo")
 
 # Errors
 If the component detects any issues with the creation of the core DMO objects (), an error message like the following will be displayed
