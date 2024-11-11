@@ -10,7 +10,7 @@ Simple LWC to help debug RAG issues
 ![alt text](https://github.com/thedges/PS2RagStatus/blob/main/PS2RagStatus-2.jpg "Sample Photo")
 
 # Errors
-If the component detects any issues with the creation of the core DMO objects (RagFileUDMO__dlm or AiGroundingFileRefCustom__dlm), an error message like the following will be displayed
+If the component detects any issues with the creation of the core DMO objects (RagFileUDMO__dlm or AiGroundingFileRefCustom__dlm), an error message like the following will be displayed:
 
 ![alt text](https://github.com/thedges/PS2RagStatus/blob/main/PS2RagStatus-Error.jpg "Error")
 
