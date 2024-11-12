@@ -17,5 +17,14 @@
                 </lightning-datatable>
             </div>
         </div>
+        <div class="slds-p-top_small">
+            <b style="color:#0039a6;">Troubleshooting</b>
+            <ul style="list-style: circle;padding-left: 20px;">
+                <li><b>No red or yellow cells</b> - Everything looks good with your search indexes.  You should be able to Retrievers in RAG scenarios.</li>
+                <li><b>Yellow in the count cell</b> - You have extra copies of the file in data cloud.  This may cause duplicate results in your searches.  You can try deleting the file from your Einstein Data Library and reloading.</li>
+                <li><b>Red in the count cell</b> - This means the the file did not load in the UDLO.  Try reloading the file to the Einstein Data Library.</li>
+                <li><b>Red in the chunk or index cell</b> - This means the the file has not been chunked and vector encoded.  This should happen automatically.  If it doesn’t fix itself within an hour, try rebuilding the index. </li>
+            </ul>
+        </div>
     </lightning-card>
 </template>
