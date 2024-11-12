@@ -12,8 +12,8 @@
             <lightning-spinner variant="base" size="medium"></lightning-spinner>
         </div>
         <div if:false={isLoading}>
-            <div style="max-height: 800px;" class="custom-datatable-no-hoverX">
-                <lightning-datatable key-field="name" data={dFiles} columns={columns} column-widths-mode="auto" hide-checkbox-column>
+            <div style="max-height: 800px" >
+                <lightning-datatable key-field="name" data={dFiles} columns={columns} column-widths-mode="auto" min-column-width="75" hide-checkbox-column>
                 </lightning-datatable>
             </div>
         </div>
