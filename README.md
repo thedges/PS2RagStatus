@@ -57,7 +57,7 @@ If your component shows empty lists when you select a data library, double check
   3. Two options to use this component:
      * Use the pre-installed "RAG Status" application that already has a page setup under the "Status" tab
      * Or drop the "ps2RagStatus" LWC component on any page or home page
-  4. [Optional] Can configure the component properties:
+  4. [Optional] Can configure the component properties by going to __Setup > Lightning App Builder__ and edit the Lightning App Page with name "RAG_Status"
      * Card Title
      * Card Icon
 
