@@ -12,6 +12,7 @@
         <targetConfig targets="lightning__RecordPage, lightning__AppPage, lightning__HomePage">
             <property name="title" type="String" default="RAG Data Library Status" label="Card Title" description="The title for the card"></property>
             <property name="iconName" type="String" default="standard:choice" label="Icon Name" description="The SLDS icon name for card title"></property>
+            <property name="searchIndexAPIName" type="String" default="RagFileUDMO_SI" label="Search Index API Name" description="The API Name of the Data Cloud search index"></property>
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

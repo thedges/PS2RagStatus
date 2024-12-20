@@ -37,7 +37,7 @@ public with sharing class PS2RagStatus {
     }
 
     @AuraEnabled
-    public static String getFileCounts(String dataLibraryId)
+    public static String getFileCounts(String dataLibraryId, String searchIndexAPIName)
     {
         List<FileDetails> fdlist = new List<FileDetails>();
 
@@ -63,8 +63,8 @@ public with sharing class PS2RagStatus {
                     '         GROUP BY "FilePath__c"\n' +
                     '     ) rf_counts\n' +
                     '     LEFT JOIN "RagFileUDMO__dlm" rf ON rf_counts."FilePath__c" = rf."FilePath__c"\n' +
-                    '     LEFT JOIN "RagFileUDMO_SI_chunk__dlm" rsi ON rf."FilePath__c" = rsi.SourceRecordId__c\n' +
-                    '     LEFT JOIN "RagFileUDMO_SI_index__dlm" rid ON rsi.RecordId__c = rid.SourceRecordId__c\n' +
+                    '     LEFT JOIN "' + searchIndexAPIName + '_chunk__dlm" rsi ON rf."FilePath__c" = rsi.SourceRecordId__c\n' +
+                    '     LEFT JOIN "' + searchIndexAPIName + '_index__dlm" rid ON rsi.RecordId__c = rid.SourceRecordId__c\n' +
                     '     GROUP BY rf_counts."FilePath__c", rf_counts.FileCount, rf_counts.TotalSizeKB \n' +
                     ') rf ON agf."FilePath__c" = rf."FilePath__c"\n' +
                     ' WHERE agf."GroundingSourceId__c" = \'' + dataLibraryId + '\'\n' +
@@ -89,7 +89,7 @@ public with sharing class PS2RagStatus {
       String tmpStr = getDataLibraries();
        System.debug(tmpStr);
 
-       tmpStr = getFileCounts('1JaHr000000oLlNKAU');
+       //tmpStr = getFileCounts('1JaHr000000oLlNKAU');
        System.debug(tmpStr);
     }
 

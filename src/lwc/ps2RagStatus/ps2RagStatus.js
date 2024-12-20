@@ -30,6 +30,7 @@ const columns = [
 export default class Ps2RagStatus extends LightningElement {
     @api title = 'RAG Data Library Status';
     @api iconName = 'standard:choice';
+    @api searchIndexAPIName = '"RagFileUDMO_SI';
     isCssLoaded = false;
 
     dLibOptions = [];
@@ -79,7 +80,7 @@ export default class Ps2RagStatus extends LightningElement {
 
     loadFiles() {
         this.isLoading = true;
-        getFileCounts({ dataLibraryId: this.dLibSelection })
+        getFileCounts({ dataLibraryId: this.dLibSelection, searchIndexAPIName: this.searchIndexAPIName })
             .then(result => {
                 this.isLoading = false;
 

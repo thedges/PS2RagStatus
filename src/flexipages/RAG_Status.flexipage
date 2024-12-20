@@ -3,6 +3,18 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentInstanceProperties>
+                    <name>iconName</name>
+                    <value>standard:choice</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>searchIndexAPIName</name>
+                    <value>RagFileUDMO_SI</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>RAG Data Library Status</value>
+                </componentInstanceProperties>
                 <componentName>ps2RagStatus</componentName>
                 <identifier>c_ps2RagStatus</identifier>
             </componentInstance>
