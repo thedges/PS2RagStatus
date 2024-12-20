@@ -20,6 +20,7 @@ If the component detects any issues with the creation of the core DMO objects (R
 | ------------- | ------------- |------------- |
 | Card Title | Text | A name to be displayed at top of component |
 | Icon Name | Text | The SLDS icon name to be displayed at top of component. Refer to [SLDS Icons](https://www.lightningdesignsystem.com/icons/) |
+| Search Index API Name | Text | The API name of the search index. See Trouble Shooting below. |
 
 # Cell Color Coding
 
@@ -30,6 +31,23 @@ If the component detects any issues with the creation of the core DMO objects (R
 * Chunk count < Count - Red
 * Index count != Chunk Count - Red
 
+# Trouble Shooting
+
+If your component shows empty lists when you select a data library, double check the below configuration setting for the "Search Index API Name".
+
+1. First get name of the __Search Index API Name__
+   * In the Data Cloud app, select the __Search Index__ tab
+   * Select the configuration name with __Source Data Model Object__ name of "RagFileUDMO__dlm"
+   * Copy the __API Name__ as indicated in the below image
+     ![alt text](https://github.com/thedges/PS2RagStatus/blob/main/PS2RagStatus-Search-Index.jpg "Search Index")
+  
+2. Next, update the PS2RagStatus LWC Component configuration with that correct Search Index API Name
+   * Go to Setup > Lightning App Builder
+   * Edit the Lightning App Page with name "RAG_Status"
+   * Select the PS2RagStatus LWC component on the page to update it's configuration
+   * Change the "Search Index API Name" congfiguration parameter to the name you copied in the first step
+   * Click "Save"
+     ![alt text](https://github.com/thedges/PS2RagStatus/blob/main/PS2RagStatus-Config1.jpg "Configuration Search Index")
 
 # Installation Instructions
 
