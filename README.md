@@ -31,7 +31,7 @@ If the component detects any issues with the creation of the core DMO objects (R
 * Chunk count < Count - Red
 * Index count != Chunk Count - Red
 
-# Trouble Shooting
+# Troubleshooting
 
 If your component shows empty lists when you select a data library, double check the below configuration setting for the "Search Index API Name".
 
