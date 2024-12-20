@@ -45,9 +45,9 @@ If your component shows empty lists when you select a data library, double check
    * Go to Setup > Lightning App Builder
    * Edit the Lightning App Page with name "RAG_Status"
    * Select the PS2RagStatus LWC component on the page to update it's configuration
-   * Change the "Search Index API Name" congfiguration parameter to the name you copied in the first step
-   * Click "Save"
+   * Change the "Search Index API Name" configuration parameter to the name you copied in the first step
      ![alt text](https://github.com/thedges/PS2RagStatus/blob/main/PS2RagStatus-Config1.jpg "Configuration Search Index")
+   * Click "Save"
 
 # Installation Instructions
 
